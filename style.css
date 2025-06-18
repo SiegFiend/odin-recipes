@@ -1,0 +1,35 @@
+* {
+  display: block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 42px;
+}
+.rec {
+  background-size: auto 100%;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: scroll-bg 60s linear infinite;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+#burrito {
+  background-image: url(./images/burrito.jpg);
+}
+#oats {
+  background-image: url(./images/oat.jpg);
+}
+#lasagna {
+  background-image: url(./images/lasagna.jpg);
+}
+
+@keyframes scroll-bg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1000px 0;
+  }
+}
